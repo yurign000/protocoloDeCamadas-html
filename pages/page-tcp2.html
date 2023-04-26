@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>osi1</title>
+    <link rel="stylesheet" href="../STYLES/style.css">
+    <script src="../JS/script.js"></script>
+</head>
+<body>
+    <!-- TOPO DO SITE -->
+    <section class="page-top">
+        <label onclick="window.location.href = 'main.html'">Protocolos de Camadas</label>
+
+        <ul class="osi-menu">
+            <div>OSI</div>
+            <ul>
+                <li onclick="changePageOsi(1)">Física</li>
+                <li onclick="changePageOsi(2)">Enlace</li>
+                <li onclick="changePageOsi(3)">Rede</li>
+                <li onclick="changePageOsi(4)">Transporte</li>
+                <li onclick="changePageOsi(5)">Sessão</li>
+                <li onclick="changePageOsi(6)">Apresentação</li>
+                <li onclick="changePageOsi(7)">Aplicação</li>
+            </ul>
+        </ul>
+    
+        <ul class="tcp-menu">
+            <div>TCP/IP</div>
+            <ul>
+                <li onclick="changePageTcp(1)">Acesso à Rede</li>
+                <li onclick="changePageTcp(2)">Rede</li>
+                <li onclick="changePageTcp(3)">Transporte</li>
+                <li onclick="changePageTcp(4)">Aplicação</li>               
+            </ul>
+        </ul>
+
+    </section>
+
+    <section class="page-middle">
+        <div>
+            <div>
+                <h1>Camada de Rede</h1>
+                <p>
+                    No TCP-IP, cada computador na rede é identificado com um único endereço virtual, chamado de endereço IP. A camada de Rede ou Internet é a responsável por adicionar o cabeçalho no pacote de dado recebido da camada de Transporte, onde além de outros dados de controle, será adicionado o endereço IP fonte e o endereço IP de destino. Ou melhor, o endereço IP do computador que está enviando o dado e o endereço IP do computador que vai receber este dado.
+                </p>
+                <p>
+                    Se não estiver sendo utilizado nenhum endereço virtual, você deve saber o endereço MAC do computador de destino, que além de ser uma tarefa difícil, não ajuda no roteamento dos pacotes, devido ao fato de que este endereço não utiliza a estrutura de nomenclatura tipo árvore.
+                </p>
+                <p>
+                    Em outras palavras, com o endereço IP, os computadores de uma mesma rede pertencerão a endereços IPs sequenciais (Ex.: 192.168.1.10 e 192.168.1.12). Já com endereços MAC, como cada máquina conectada na rede tem um único endereço físico, não podemos identificar sequencialmente (Ex.: 00-14-22-01-23-45 e 01-24-10-12-14-54).
+                </p>
+                <p>
+                    O roteamento é o caminho que o pacote de dado deve utilizar para chegar ao seu destino e quando há uma requisição de dado para um servidor, este dado, antes de chegar no seu computador, passa por vários locais (chamados roteadores).
+                </p>
+                <p>
+                    A Camada 3 do modelo OSI (Redes) é chamada de Internet no TCP/IP.
+                </p>
+        </div>
+    </section>
+
+    <section class="page-bottom">
+        
+    </section>
+
+
+    
+</body>
+</html>

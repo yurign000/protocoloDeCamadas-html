@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Protocolo de camadas</title>
+
+    <link rel="stylesheet" href="../STYLES/style.css">
+    <script src="../JS/script.js"></script>
+</head>
+<body>
+    <!-- TOPO DO SITE -->
+    <section class="page-top">
+        <label>Protocolos de Camadas</label>
+
+        <ul class="osi-menu">
+            <div>OSI</div>
+            <ul>
+                <li onclick="changePageOsi(1)">Física</li>
+                <li onclick="changePageOsi(2)">Enlace</li>
+                <li onclick="changePageOsi(3)">Rede</li>
+                <li onclick="changePageOsi(4)">Transporte</li>
+                <li onclick="changePageOsi(5)">Sessão</li>
+                <li onclick="changePageOsi(6)">Apresentação</li>
+                <li onclick="changePageOsi(7)">Aplicação</li>
+            </ul>
+        </ul>
+    
+        <ul class="tcp-menu">
+            <div>TCP/IP</div>
+            <ul>
+                <li onclick="changePageTcp(1)">Acesso à Rede</li>
+                <li onclick="changePageTcp(2)">Rede</li>
+                <li onclick="changePageTcp(3)">Transporte</li>
+                <li onclick="changePageTcp(4)">Aplicação</li>            
+            </ul>
+        </ul>
+
+    </section>
+
+    <section class="page-middle">
+        <div>
+            <div>
+                <h2>Modelo OSI</h2>
+                <p> 
+                    O modelo Interconexão de Sistemas Abertos (OSI) é um modelo conceitual criado pela Organização Internacional de Normalização que permite que diversos sistemas de comunicação se comuniquem usando protocolos padronizados. Em poucas palavras, o OSI fornece um padrão para que diferentes sistemas de computadores possam se comunicar.
+                </p> 
+                <p>
+                    O modelo OSI pode ser visto como uma linguagem universal para Redes de computadores. É baseado no conceito de dividir um sistema de comunicação em sete camadas abstratas, empilhadas umas sobre as outras.
+                </p> 
+            </div>
+            <div>
+                <figure>
+                    <img src="../assets/osi.png">
+                    <figcaption>
+                        <a target="_blank" href="https://www.dltec.com.br/blog/cisco/entendendo-o-modelo-osi-para-melhorar-sua-capacidade-de-resolver-problemas-em-uma-rede-cisco/">www.dltec.com.br</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <hr>
+
+        <div>
+            <div>
+                <h2>Modelo TPC/IP</h2>
+                <p>
+                    TCP/IP é a combinação de 2 protocolos: TCP (Transmission Control Protocol, que significa Protocolo de Controle de Transmissão) e IP (Internet Protocol, que significa Protocolo de Internet). 
+                </p>
+                <p>
+                    O modelo TCP/IP é mais antigo que o modelo OSI. Apesar do modelo OSI ser a referência para as redes e toda sua nomenclatura, a arquitetura TCP/IP é a que foi realmente implementada e está em uso até os dias de hoje tanto nas redes internas (Intranets) como na Internet.
+                </p>
+                <p>
+                    A diferença entre o modelo OSI e o TCP/IP é que o modelo OSI é uma padronização, um modelo conceitual que serve de base para criar outros modelos, e o modelo TCP/IP temos implementado na prática, combinando algumas camadas do OSI em uma só.
+                </p>
+            </div>
+            <div>
+                <figure>
+                    <img src="../assets/tcp.png">
+                    <figcaption>
+                        <a target="_blank" href="https://www.blogson.com.br/protocolos-da-internet-o-protocolo-tcp-ip/">www.blogson.com.br</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <hr>
+        <div id="iframe">
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/IOIWEjh5QNA"></iframe>
+        </div>
+    </section>
+
+    <section class="page-bottom">
+        
+    </section>
+
+
+</body>
+</html>

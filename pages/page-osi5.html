@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>osi1</title>
+    <link rel="stylesheet" href="../STYLES/style.css">
+    <script src="../JS/script.js"></script>
+</head>
+<body>
+    <!-- TOPO DO SITE -->
+    <section class="page-top">
+        <label onclick="window.location.href = 'main.html'">Protocolos de Camadas</label>
+
+        <ul class="osi-menu">
+            <div>OSI</div>
+            <ul>
+                <li onclick="changePageOsi(1)">Física</li>
+                <li onclick="changePageOsi(2)">Enlace</li>
+                <li onclick="changePageOsi(3)">Rede</li>
+                <li onclick="changePageOsi(4)">Transporte</li>
+                <li onclick="changePageOsi(5)">Sessão</li>
+                <li onclick="changePageOsi(6)">Apresentação</li>
+                <li onclick="changePageOsi(7)">Aplicação</li>
+            </ul>
+        </ul>
+    
+        <ul class="tcp-menu">
+            <div>TCP/IP</div>
+            <ul>
+                <li onclick="changePageTcp(1)">Acesso à Rede</li>
+                <li onclick="changePageTcp(2)">Rede</li>
+                <li onclick="changePageTcp(3)">Transporte</li>
+                <li onclick="changePageTcp(4)">Aplicação</li>              
+            </ul>
+        </ul>
+
+    </section>
+
+    <section class="page-middle">
+        <div>
+            <div>
+                <h1>Camada de Sessão</h1>
+                <p>
+                    A camada de sessão permite o estabelecimento da sessão entre processos em execução em estações diferentes. Ela fornece o seguinte: 
+                </p>
+                <ul>
+                    <li>
+                        Estabelecimento da sessão, manutenção e encerramento: permite que dois processos de aplicativo em máquinas diferentes para estabelecer, use e terminar uma conexão, uma sessão de chamada.
+                    </li>
+                    <li>
+                        Suporte de sessão: realiza as funções que permitem que esses processos se comuniquem através da rede, realizando tarefas de segurança, reconhecimento de nomes, registro em log e assim por diante.
+                    </li>
+                </ul>
+                <p>
+                    De acordo com Gallo e Hancock esta camada é vista como responsável por coordenar o fluxo dos dados entre os nós. Nela são implementadas regras para sincronização das trocas de mensagens, e por averiguar quais procedimentos a serem tomados em caso de falhas. Intercala as camadas de Apresentação e Transporte, as quais se comunicam diretamente com ela.
+                </p>
+                <p>
+                    A camada de transporte gerencia a comunicação fim a fim entre duas máquinas, mas o que desejamos é a comunicação entre aplicações nessas máquinas. A camada de sessão tem objetivo de fornecimento desse serviço de gerência de conexão entre aplicações, provendo ainda o mecanismo de segurança, autenticação e sincronismo entre as partes. De forma simples, podemos dizer que permite a comunicação fim a fim entre aplicações em máquinas remotas, provendo ainda segurança via mecanismo de criptografia e gerencia de sessão.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-bottom">
+    </section>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>osi1</title>
+    <link rel="stylesheet" href="../STYLES/style.css">
+    <script src="../JS/script.js"></script>
+</head>
+<body>
+    <!-- TOPO DO SITE -->
+    <section class="page-top">
+        <label onclick="window.location.href = 'main.html'">Protocolos de Camadas</label>
+
+        <ul class="osi-menu">
+            <div>OSI</div>
+            <ul>
+                <li onclick="changePageOsi(1)">Física</li>
+                <li onclick="changePageOsi(2)">Enlace</li>
+                <li onclick="changePageOsi(3)">Rede</li>
+                <li onclick="changePageOsi(4)">Transporte</li>
+                <li onclick="changePageOsi(5)">Sessão</li>
+                <li onclick="changePageOsi(6)">Apresentação</li>
+                <li onclick="changePageOsi(7)">Aplicação</li>
+            </ul>
+        </ul>
+    
+        <ul class="tcp-menu">
+            <div>TCP/IP</div>
+            <ul>
+                <li onclick="changePageTcp(1)">Acesso à Rede</li>
+                <li onclick="changePageTcp(2)">Rede</li>
+                <li onclick="changePageTcp(3)">Transporte</li>
+                <li onclick="changePageTcp(4)">Aplicação</li>               
+            </ul>
+        </ul>
+
+    </section>
+
+    <section class="page-middle">
+        <div>
+            <div>
+                <h1>Camada de Transporte</h1>
+                <p>
+                    Quando há a transmissão de dados no TCP-IP, a camada de transporte é responsável por pegar este dado da camada de Aplicação e dividir ele em vários pacotes menores. O TCP (Transmission Control Protocol) é o protocolo mais utilizado na camada de Transporte e como falado anteriormente, ele pode tanto quebrar a informação em pacotes quanto organizar de forma a colocar em ordem a mensagem.
+                </p>
+                <p>
+                    Assim, quando ele está recebendo dados, o mesmo tem a função de organizar eles para que a mensagem possa ser interpretada pela camada de Aplicação.
+                </p>
+                <p>
+                    Enquanto o TCP organiza os pacotes, ele também utiliza o sistema de reconhecimento da informação para verificar se os dados estão íntegros. Outro protocolo presente nesta camada é o UDP (User Datagram Protocol) que é utilizado quando dados menos importantes são transmitidos, tipicamente em requisições DNS.
+                </p>
+                <p>
+                    Isto porque o UDP não possui as funcionalidades de reorganização das informações nem de verificação da integridade dos dados. No entanto, ele é bem mais rápido do que o TCP.
+                </p>
+                <p>
+                    Quando o UDP é utilizado, a aplicação que estiver solicitando os dados que será a responsável por verificar a integridade dos mesmos e reordenar os pacotes, fazendo a função que o TCP faria.
+                </p>
+                <p>
+                    Ambos os protocolos UDP e TCP vão buscar o dado da camada de Aplicação e acrescentam um endereço virtual (cabeçalho) a cada pacote que por sua vez é removido quando chega no receptor da informação.
+                </p>
+                <p>
+                    A Camada 4 tanto no modelo OSI como no TCP/IP são chamadas de camada de Transporte.
+                </p>
+        </div>
+    </section>
+
+    <section class="page-bottom">
+        
+    </section>
+
+
+    
+</body>
+</html>

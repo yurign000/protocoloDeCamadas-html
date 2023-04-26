@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>osi1</title>
+    <link rel="stylesheet" href="../STYLES/style.css">
+    <script src="../JS/script.js"></script>
+</head>
+<body>
+    <!-- TOPO DO SITE -->
+    <section class="page-top">
+        <label onclick="window.location.href = 'main.html'">Protocolos de Camadas</label>
+
+        <ul class="osi-menu">
+            <div>OSI</div>
+            <ul>
+                <li onclick="changePageOsi(1)">Física</li>
+                <li onclick="changePageOsi(2)">Enlace</li>
+                <li onclick="changePageOsi(3)">Rede</li>
+                <li onclick="changePageOsi(4)">Transporte</li>
+                <li onclick="changePageOsi(5)">Sessão</li>
+                <li onclick="changePageOsi(6)">Apresentação</li>
+                <li onclick="changePageOsi(7)">Aplicação</li>
+            </ul>
+        </ul>
+    
+        <ul class="tcp-menu">
+            <div>TCP/IP</div>
+            <ul>
+                <li onclick="changePageTcp(1)">Acesso à Rede</li>
+                <li onclick="changePageTcp(2)">Rede</li>
+                <li onclick="changePageTcp(3)">Transporte</li>
+                <li onclick="changePageTcp(4)">Aplicação</li>               
+            </ul>
+        </ul>
+
+    </section>
+
+    <section class="page-middle">
+        <div>
+            <div>
+                <h1>Interface de Rede</h1>
+                <p>
+                    No TCP-IP, os datagramas gerados na camada de Rede vão ser enviados para a camada inferior, a camada de Interface de Rede (caso estivermos enviando dados) ou a camada de Interface de Rede estará recebendo dados da rede e enviando para a camada de Internet (caso estivermos recebendo dados).
+                </p>
+                <p>
+                    Esta camada é definida por qual o tipo de rede física seu computador está conectado. Sabemos que quase sempre seu computador estará conectado a rede Ethernet (lembrando sempre que wireless também são redes Ethernet).
+                </p>
+                <p>
+                    Como já sabemos, TCP-IP é um conjunto de protocolos que trabalham nas camadas 3 a 7 do modelo OSI e a Ethernet é um conjunto de protocolos que pertencem às camadas 1 e 2 do modelo OSI. Isso significa que a Ethernet lida com o aspecto físico da rede, complementando o TCP-IP que lida com os dados especificamente.
+                </p>
+                <p>
+                    A Ethernet possui três camadas a citar: Logic Link Control (LLC), Media Access Control (MAC) e Physical. As camadas LLC e MAC correspondem juntas a segunda camada do modelo OSI
+                </p>
+                <p>
+                    As Camadas 1 e 2 do modelo OSI estão agregadas na camada 1 do TCP/IP
+                </p>
+        </div>
+        <div>
+            <figure>
+                <img src="../assets/tcp-host.png">
+                <figcaption>
+                    <a target="_blank" href="https://www.citisystems.com.br/protocolo-tcp-ip/">www.citisystems.com.br</a>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="page-bottom">
+        
+    </section>
+
+
+    
+</body>
+</html>

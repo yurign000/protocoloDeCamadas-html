@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>osi1</title>
+    <link rel="stylesheet" href="../STYLES/style.css">
+    <script src="../JS/script.js"></script>
+</head>
+<body>
+    <!-- TOPO DO SITE -->
+    <section class="page-top">
+        <label onclick="window.location.href = 'main.html'">Protocolos de Camadas</label>
+
+        <ul class="osi-menu">
+            <div>OSI</div>
+            <ul>
+                <li onclick="changePageOsi(1)">Física</li>
+                <li onclick="changePageOsi(2)">Enlace</li>
+                <li onclick="changePageOsi(3)">Rede</li>
+                <li onclick="changePageOsi(4)">Transporte</li>
+                <li onclick="changePageOsi(5)">Sessão</li>
+                <li onclick="changePageOsi(6)">Apresentação</li>
+                <li onclick="changePageOsi(7)">Aplicação</li>
+            </ul>
+        </ul>
+    
+        <ul class="tcp-menu">
+            <div>TCP/IP</div>
+            <ul>
+                <li onclick="changePageTcp(1)">Acesso à Rede</li>
+                <li onclick="changePageTcp(2)">Rede</li>
+                <li onclick="changePageTcp(3)">Transporte</li>
+                <li onclick="changePageTcp(4)">Aplicação</li>               
+            </ul>
+        </ul>
+
+    </section>
+
+    <section class="page-middle">
+        <div>
+            <div>
+                <h1>Camada de Rede</h1>
+                <p>
+                    A camada de rede controla a operação da sub-rede, decidindo que caminho físico os dados devem seguir com base nas condições da rede, na prioridade do serviço e em outros fatores. Ela fornece o seguinte: 
+                </p>
+                <ul>
+                    <li>
+                        Roteamento: roteia quadros entre redes.
+                    </li>
+                    <li>
+                        Controle de tráfego da sub-rede: roteadores (sistemas intermediários da camada de rede) podem instruir uma estação de envio a "desacelerar" sua transmissão de quadros quando o buffer do roteador fica cheio.
+                    </li>
+                    <li>
+                        Fragmentação de quadros: se ela determinar que o tamanho da unidade máxima de transmissão (MTU) do roteador downstream é menor que o tamanho do quadro, um roteador poderá fragmentar um quadro para transmissão e remontagem na estação de destino.
+                    </li>
+                    <li>
+                        Mapeamento de endereços lógicos-físicos: converte endereços lógicos, ou nomes, em endereços físicos.
+                    </li>
+                    <li>
+                        Contabilidade de uso da sub-rede: tem funções de contabilidade para manter o controle dos quadros encaminhados por sistemas intermediários da sub-rede, para produzir informações de cobrança.
+                    </li>
+                </ul>
+                <h3>Sub-rede de Comunicações</h3>
+                <p>
+                    O software de camada de rede deve criar cabeçalhos para que o software de camada de rede residente nos sistemas intermediários da sub-rede possam reconhecê-los e usá-los para rotear dados ao endereço de destino. 
+                </p>
+                <p>
+                    Essa camada dispensa as camadas superiores da necessidade de conhecer informações sobre as tecnologias de transmissão de dados comutação intermediária usadas para conectar sistemas. Ela estabelece, mantém e finaliza conexões nas instalações de comunicações intervenientes (um ou vários sistemas intermediários na sub-rede de comunicação). 
+                </p>
+                <p>
+                    Na camada de rede e nas camadas abaixo dela, existem protocolos de par entre um nó e seu vizinho imediato, mas o vizinho pode ser um nó através do qual os dados são roteados, e não a estação de destino. As estações de origem e de destino podem ser separadas por vários sistemas intermediários.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-bottom">
+        
+    </section>
+
+
+    
+</body>
+</html>

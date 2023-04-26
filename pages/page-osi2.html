@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>osi1</title>
+    <link rel="stylesheet" href="../STYLES/style.css">
+    <script src="../JS/script.js"></script>
+</head>
+<body>
+    <!-- TOPO DO SITE -->
+    <section class="page-top">
+        <label onclick="window.location.href = 'main.html'">Protocolos de Camadas</label>
+
+        <ul class="osi-menu">
+            <div>OSI</div>
+            <ul>
+                <li onclick="changePageOsi(1)">Física</li>
+                <li onclick="changePageOsi(2)">Enlace</li>
+                <li onclick="changePageOsi(3)">Rede</li>
+                <li onclick="changePageOsi(4)">Transporte</li>
+                <li onclick="changePageOsi(5)">Sessão</li>
+                <li onclick="changePageOsi(6)">Apresentação</li>
+                <li onclick="changePageOsi(7)">Aplicação</li>
+            </ul>
+        </ul>
+    
+        <ul class="tcp-menu">
+            <div>TCP/IP</div>
+            <ul>
+                <li onclick="changePageTcp(1)">Acesso à Rede</li>
+                <li onclick="changePageTcp(2)">Rede</li>
+                <li onclick="changePageTcp(3)">Transporte</li>
+                <li onclick="changePageTcp(4)">Aplicação</li>              
+            </ul>
+        </ul>
+
+    </section>
+
+    <section class="page-middle">
+        <div>
+            <div>
+                <h1>Vinculo de Dados</h1>
+                <p>
+                    A camada de vínculo de dados proporciona uma transferência de quadros de dados sem erros de um nó para outro através da camada física, permitindo que as camadas acima dela assumam a transmissão praticamente sem erros através do vínculo. Para fazer isso, a camada de vínculo de dados fornece: 
+                </p>
+                <ul>
+                    <li>
+                        Estabelecimento de finalização de vínculo: estabelece e finaliza o vínculo lógico entre dois nós.
+                    </li>
+                    <li>
+                        Controle de tráfego de quadros: instrui o nó de transmissão a se "retirar" quando não houver buffers de quadros disponíveis.
+                    </li>
+                    <li>
+                        Sequenciamento de quadros: transmite/recebe quadros sequencialmente.
+                    </li>
+                    <li>
+                        Confirmação de quadros: fornece/espera confirmações de quadros. Faz a detecção e recuperação de erros que ocorrem na camada física, retransmitindo quadros não confirmados e lidando com o recebimento de quadros duplicados.
+                    </li>
+                    <li>
+                        Delimitação de quadros: cria e reconhece limites de quadros.
+                    </li>
+                    <li>
+                        Verificação de erros de quadros: verifica a integridade dos quadros recebidos.
+                    </li>
+                    <li>
+                        Gerenciamento do acesso à mídia: determina quando o nó "tem o direito" de utilizar o meio físico.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-bottom">
+        
+    </section>
+
+
+    
+</body>
+</html>

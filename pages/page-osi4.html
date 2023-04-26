@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>osi1</title>
+    <link rel="stylesheet" href="../STYLES/style.css">
+    <script src="../JS/script.js"></script>
+</head>
+<body>
+    <!-- TOPO DO SITE -->
+    <section class="page-top">
+        <label onclick="window.location.href = 'main.html'">Protocolos de Camadas</label>
+
+        <ul class="osi-menu">
+            <div>OSI</div>
+            <ul>
+                <li onclick="changePageOsi(1)">Física</li>
+                <li onclick="changePageOsi(2)">Enlace</li>
+                <li onclick="changePageOsi(3)">Rede</li>
+                <li onclick="changePageOsi(4)">Transporte</li>
+                <li onclick="changePageOsi(5)">Sessão</li>
+                <li onclick="changePageOsi(6)">Apresentação</li>
+                <li onclick="changePageOsi(7)">Aplicação</li>
+            </ul>
+        </ul>
+    
+        <ul class="tcp-menu">
+            <div>TCP/IP</div>
+            <ul>
+                <li onclick="changePageTcp(1)">Acesso à Rede</li>
+                <li onclick="changePageTcp(2)">Rede</li>
+                <li onclick="changePageTcp(3)">Transporte</li>
+                <li onclick="changePageTcp(4)">Aplicação</li>               
+            </ul>
+        </ul>
+
+    </section>
+
+    <section class="page-middle">
+        <div>
+            <div>
+                <h1>Camada de Transporte</h1>
+                <p>
+                    A camada de transporte garante que as mensagens sejam entregues sem erros, em sequência e sem perdas ou duplicações. Ela elimina para os protocolos de camadas superiores qualquer preocupação a respeito da transferência de dados entre eles e seus pares. 
+                </p>
+                <p>
+                    O tamanho e a complexidade de um protocolo de transporte depende do tipo de serviço que ele pode obter da camada de rede. Para uma camada de rede confiável com capacidade de circuito virtual, uma camada de transporte mínima é necessária. Se a camada de rede não for confiável e/ou apenas tiver suporte para datagramas, o protocolo de transporte deverá incluir procedimentos externos de detecção e recuperação de erros. 
+                </p>
+                <p>
+                    Normalmente, a camada de transporte pode aceitar mensagens relativamente grandes, mas existem limites rigorosos de tamanho de mensagens impostos pela camada de rede (ou inferior). Consequentemente, a camada de transporte deve dividir as mensagens em unidades menores, ou quadros, acrescentando um cabeçalho ao início de cada quadro. 
+                </p>
+                <p>
+                    As informações de cabeçalho da camada de transporte devem então incluir informações de controle, como sinalizadores de início e fim de mensagem, para permitir que a camada de transporte na outra extremidade reconheça os limites da mensagem. Além disso, se as camadas inferiores não mantiverem a sequência, o cabeçalho de transporte deverá conter informações de sequência para permitir que a camada de transporte na extremidade receptora junte as partes na ordem certa antes de entregar a mensagem recebida para a camada acima.
+                </p>
+                <h3>Camadas de ponta a ponta</h3>
+                <p>
+                    Ao contrário das camadas inferiores de "sub-rede", cujo protocolo está entre nós imediatamente adjacentes, a camada de transporte e as camadas acima dela são verdadeiras camadas de "origem até o destino", ou ponta a ponta, e desconsideram os detalhes dos recursos de comunicações subjacentes. Os softwares da camada de transporte (e os softwares acima deles) na estação de origem realizam uma conversa com softwares semelhantes na estação de destino, usando cabeçalhos de mensagens e mensagens de controle.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-bottom">
+    </section>
+
+
+    
+</body>
+</html>
